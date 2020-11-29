@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <component :is="layout">
+      <router-view />
+    </component>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import no_sidebar_layout from "@/components/layouts/no_sidebar"
+import sidebar_layout from "@/components/layouts/sidebar"
+const default_layout = "no_sidebar";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: "App",
+  components: {  no_sidebar_layout, sidebar_layout},
+   computed: {
+    layout() {
+      return (this.$route.meta.layout || default_layout) + "_layout";
+    }
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

@@ -1,9 +1,10 @@
 <template>
   <div class="header_hydroid">
     <img class="logo" src="@/assets/menu_logo_shadow.png" />
-    <search_bar class="search_bar"/>
-    <img class="notifications" src="@/assets/bell.svg"/>
     <profile_button @click="logout()" class="profile_btn"/>
+    <img class="notifications" src="@/assets/bell.svg"/>
+     <search_bar class="search_bar"/> 
+   
     <!-- <button @click="logout()" class="logout">Logout</button> -->
   </div>
 </template>
@@ -31,13 +32,13 @@ export default {
 </script>
 <style scoped>
 .search_bar{
-  position:absolute;
-  right:12rem;
+  /* position:absolute;
+  right:12rem; */
+  float:right;
   margin-top:.4rem;
 }
 .header_hydroid {
   width: 100%;
-  overflow-x: hidden;
   background-color: white;
   min-height: 1rem;
   margin: 0;
@@ -49,6 +50,7 @@ export default {
 .logo {
   width: 6rem;
   height: 2.8rem;
+  float:right;
   border-radius: 5px;
   position: absolute;
   top:7px;
@@ -65,12 +67,17 @@ export default {
 }
 .notifications{
   width:1.6rem;
-  position:absolute;
+  float:right;
+  margin:.9rem 2rem 0 1rem;
+  /* position:absolute;
   top:.7rem;  
-  right:14rem;
+  right:14rem; */
 }
 .profile_btn{
-  position:absolute;
-  right:3rem;
+  /* position:absolute;
+  right:3rem; */
+  float:right;
+  margin-right:1rem;
+  margin-top:3  px;
 }
 </style>

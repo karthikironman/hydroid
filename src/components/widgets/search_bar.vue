@@ -52,8 +52,9 @@ body {
 	outline: transparent;
 }
 .search-bar {
-	margin: 0 0 0 10rem;
-
+	/* margin: 0 0 0 10rem; */
+    margin-right:0;
+	float:right;
 	justify-content: center;
 	max-width: 20em;
 }

@@ -25,6 +25,5 @@ export default {
 .innercontent{
     margin-left: 13rem;
     margin-top: 1rem;
-    padding-right:2rem;
 }
 </style>

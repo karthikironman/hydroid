@@ -55,6 +55,7 @@ export default {
 border-radius: 12px;
 position:relative;
 text-align:center;  
+z-index:1;
 }
 .person{
     width:1.8rem;

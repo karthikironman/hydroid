@@ -1,6 +1,5 @@
 <template>
     <div class="dashboard">
-        dashbaord pa playboy
         <barchart/>
         </div>
 </template>
@@ -19,7 +18,6 @@ export default {
 </script>
 <style scoped>
 .dashboard{
-    margin-left: 13rem;
-    margin-top: 1rem;
+    
 }
 </style>

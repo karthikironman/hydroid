@@ -2,7 +2,8 @@
     <div>
       <head_bar />
       <sidemenu/>
-        <slot></slot>
+      <div  class="innercontent"> <slot></slot></div>
+       
         </div>
 </template>
 <script>
@@ -20,3 +21,10 @@ export default {
     }
 }
 </script>
+<style scoped>
+.innercontent{
+    margin-left: 13rem;
+    margin-top: 1rem;
+    padding-right:2rem;
+}
+</style>

@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router';
 import login from "@/components/pages/login"
 import dashboard from "@/components/pages/dashboard"
+import user from "@/components/pages/user"
+import meterreading from "@/components/pages/meterReading"
 Vue.use(Router)
 export default new Router(
     {
@@ -16,6 +18,22 @@ export default new Router(
                 path:'/dashboard',
                 name:'dashboard',
                 component:dashboard,
+                meta: {
+                    layout: "sidebar",
+                  }
+            },
+            {
+                path:'/user',
+                name:'user',
+                component:user,
+                meta: {
+                    layout: "sidebar",
+                  }
+            },
+            {
+                path:'/meterreading',
+                name:'meterreading',
+                component:meterreading,
                 meta: {
                     layout: "sidebar",
                   }

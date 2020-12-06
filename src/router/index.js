@@ -3,7 +3,8 @@ import Router from 'vue-router';
 import login from "@/components/pages/login"
 import dashboard from "@/components/pages/dashboard"
 import user from "@/components/pages/user"
-import meterreading from "@/components/pages/meterReading"
+import meterreading from "@/components/pages/meterReading";
+import fournotfour from "@/components/pages/fourNotfour";
 Vue.use(Router)
 export default new Router(
     {
@@ -37,6 +38,12 @@ export default new Router(
                 meta: {
                     layout: "sidebar",
                   }
+            },
+            {
+                path:'*',
+                name:'fournotfour',
+                component:fournotfour,
+             
             }
         ]
     }

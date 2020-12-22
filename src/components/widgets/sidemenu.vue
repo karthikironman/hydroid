@@ -7,8 +7,10 @@
 import menu_box from "@/components/widgets/menu_box.vue";
 import dashboard_logo from "@/assets/list_dashboard.png";
 import meterReading_logo from "@/assets/meter_reading.png";
+import addDetails_logo from '@/assets/add.png';
+import view_logo from "@/assets/eye.png";
 // import facility_logo from "@/assets/fast_check.svg";
-// import admin_logo from "@/assets/admin_panel.svg";
+//  import admin_logo from "@/assets/admin_panel.svg";
 import account_logo from "@/assets/account_input.svg";
 export default {
   data() {
@@ -37,6 +39,22 @@ export default {
           unique: false,
           active: false,
           routeName: "meterreading"
+        },
+        {
+          style: "simple-menu",
+          title: "overview",
+          image: null,
+          unique: false,
+          active: false,
+          routeName: "overview"
+        },
+        {
+          style: "simple-menu",
+          title: "add details",
+          image: null,
+          unique: false,
+          active: false,
+          routeName: "addDetails"
         }
       ]
     };
@@ -71,6 +89,9 @@ export default {
     this.menu[0].image = account_logo;
     this.menu[1].image = dashboard_logo;
     this.menu[2].image = meterReading_logo;
+    this.menu[3].image = view_logo;
+    this.menu[4].image = addDetails_logo;
+
     this.routeActiveMatch();
   },
   components: {

@@ -11,7 +11,7 @@
           labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
           datasets: [
                 {
-              label: 'Data One',
+              label: 'Kitchen',
               backgroundColor: '#7C6BDA',
               pointBackgroundColor: 'white',
               borderWidth: 1,
@@ -20,7 +20,7 @@
               data: [90, 120, 130, 120, 190, 101, 120, 140, 150, 170, 190, 300]
             },
             {
-              label: 'Data One',
+              label: 'Bathroom',
               backgroundColor: '#F26E6E',
               pointBackgroundColor: 'white',
               borderWidth: 1,
@@ -29,7 +29,7 @@
               data: [40, 20, 30, 50, 90, 10, 20, 40, 50, 70, 90, 100]
             },
              {
-              label: 'Data One',
+              label: 'Toilet',
               backgroundColor: '#F8C138',
               pointBackgroundColor: 'white',
               borderWidth: 1,

@@ -10,6 +10,7 @@
     <div class="row_elements">
        <colorCards v-for="i in 4" :color="i" :key="i"/>
     </div>
+    <br/>
   </div>
 </template>
 <script>
@@ -31,7 +32,9 @@ export default {
 </script>
 <style scoped>
 .dashboard {
-  height:calc(100vh - 5rem);
+  height:calc(100vh - 4.4rem);
+  padding-top:1rem;
+ 
   overflow-y:scroll;
 }
 .graph_bt {

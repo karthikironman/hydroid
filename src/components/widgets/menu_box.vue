@@ -69,7 +69,7 @@ export default {
   margin-right:10px;
 }
 .active{
-  background:white;
+  background:#F6F6F6;
     color:#5953B5 ;
      border-top-left-radius: 25px;
     border-bottom-left-radius: 25px; 

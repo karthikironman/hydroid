@@ -23,7 +23,9 @@ export default {
 </script>
 <style scoped>
 .innercontent{
-    margin-left: 13rem;
-    margin-top: 1rem;
+    margin-left: 12rem;
+    padding-left:1rem;
+    margin-top: 0rem;
+    background: #F5F5F5;
 }
 </style>

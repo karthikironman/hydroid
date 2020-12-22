@@ -1,31 +1,29 @@
 <template>
-  <div class="meterReading">
+  <div class="overview">
     <div class="row-one">
       <blacktop class="consumption" :title="'Current consumption of meters'" />
       <blacktop class="calendar" :title="'Calendar'">
-       <calendar/>
-      
+        <calendar />
       </blacktop>
-     
-     
     </div>
-     <div class="row-two">
-       <div class="label-patch">Daily meter reading report </div>
-         <linechart/>
-      </div>
+    <div class="row-two">
+      <blacktop :title="'Current consumption of meters'">
+        <barchart />
+      </blacktop>
+    </div>
   </div>
 </template>
 <script>
- import linechart from "@/components/charts/line";
-import calendar from "@/components/widgets/calendar"
-import blacktop from "@/components/widgets/blacktop"
+import barchart from "@/components/charts/bar";
+import calendar from "@/components/widgets/calendar";
+import blacktop from "@/components/widgets/blacktop";
 // import notificationCol from "@/components/widgets/notificationcol.vue";
 export default {
   data() {
     return {};
   },
   components: {
-    linechart,
+    barchart,
     calendar,
     blacktop
     // notificationCol
@@ -33,7 +31,7 @@ export default {
 };
 </script>
 <style scoped>
-.meterReading {
+.overview {
   height: calc(100vh - 4.4rem);
   padding-top: 1rem;
 
@@ -51,18 +49,18 @@ export default {
   width: 45%;
   height: 30rem;
   margin-right: 1rem;
-   
-    background: #F2F2F2;
-}
-.row-two{
-  padding:2rem 1rem;
 
+  background: #f2f2f2;
 }
-.label-patch{
-  background-color:#FFF2D1;
-  width:fit-content;
-  padding:1rem 3rem;
-  border-radius:13px;
+.row-two {
+  padding: 2rem 0rem;
+  margin-right:1rem;
+}
+.label-patch {
+  background-color: #fff2d1;
+  width: fit-content;
+  padding: 1rem 3rem;
+  border-radius: 13px;
   font-family: Arial, Helvetica, sans-serif;
 }
 </style>

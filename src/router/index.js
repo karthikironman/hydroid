@@ -5,6 +5,8 @@ import dashboard from "@/components/pages/dashboard"
 import user from "@/components/pages/user"
 import meterreading from "@/components/pages/meterReading";
 import fournotfour from "@/components/pages/fourNotfour";
+import overview from "@/components/pages/overview"
+import addDetails from "@/components/pages/addDetails"
 Vue.use(Router)
 export default new Router(
     {
@@ -35,6 +37,22 @@ export default new Router(
                 path:'/meterreading',
                 name:'meterreading',
                 component:meterreading,
+                meta: {
+                    layout: "sidebar",
+                  }
+            },
+            {
+                path:'/facility/overview',
+                name:'overview',
+                component:overview,
+                meta: {
+                    layout: "sidebar",
+                  }
+            },
+            {
+                path:'/facility/add_details',
+                name:'addDetails',
+                component:addDetails,
                 meta: {
                     layout: "sidebar",
                   }

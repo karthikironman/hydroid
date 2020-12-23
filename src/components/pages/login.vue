@@ -1,7 +1,8 @@
 <template>
   <div class="login">
+      <img class="wave_back"  src="@/assets/group_bar.svg" />
     <div class="head_bar">
-        <!-- <img src="@/assets/wallpaper/group_bar.svg" /> -->
+
       <div class="image_wrapper" v-for="(image,index) in imageArray" :key="index">
         <img :src="image" />
       </div>
@@ -23,7 +24,7 @@ export default {
   data() {
     return {
       imageArray: [
-        
+
       ]
     };
   },
@@ -56,10 +57,17 @@ export default {
     display: flex;
     width: 100vw;
     top: 2rem;
-    background-image: url(/img/group_bar.816c07cc.svg);
+    /* background-image: url(/img/group_bar.816c07cc.svg); */
     background-size: contain;
     height: fit-content;
 
+}
+.wave_back{
+  position:absolute;
+  width:100vw;
+  z-index:1;
+  top:0;
+  /* height:12rem; */
 }
 .login {
   position: relative;
@@ -81,6 +89,8 @@ export default {
 }
 .image_wrapper{
     margin:0 2rem;
+    position:relative;
+    z-index:1;
 }
 .image_wrapper > img{
     width:8rem;

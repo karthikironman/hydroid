@@ -20,6 +20,7 @@ export default {
     },
     methods:{
         logout(){
+            sessionStorage.clear();
             this.$router.push({
                 name:'loginPage'
             })

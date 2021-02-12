@@ -1,16 +1,22 @@
 <template>
-  <div>
-    <inprogress />
+  <div class="user-page">
+  <div class="user-profile"></div>
+  <div class="user-update"></div>
   </div>
 </template>
 <script>
-import inprogress from "@/components/widgets/inprogress.vue";
+
 export default {
   data() {
     return {};
   },
   components: {
-    inprogress
+
   }
 };
 </script>
+<style scoped>
+.user-page{
+  display:flex;
+}
+</style>

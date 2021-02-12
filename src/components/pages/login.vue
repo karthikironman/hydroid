@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-      <img class="wave_back"  src="@/assets/group_bar.svg" />
+      <img class="wave_back"  src="../../assets/group_bar.svg" />
     <div class="head_bar">
 
       <div class="image_wrapper" v-for="(image,index) in imageArray" :key="index">
@@ -97,5 +97,12 @@ export default {
 }
 .login_card{
     margin-top:7rem;
+}
+</style>
+<style >
+.toasted-container.top-right {
+    top: 10%;
+    right: 7%;
+    font-family: arial;
 }
 </style>
